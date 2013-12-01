@@ -22,7 +22,7 @@ example
 ```javascript
 var request = require('request');
 var xmlNodes = require('xml-nodes');
-var xmlObjects = require('../');
+var xmlObjects = require('xml-objects');
 
 request('http://news.yahoo.com/rss/entertainment')
   .pipe(xmlNodes('item'))
