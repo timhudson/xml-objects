@@ -1,0 +1,25 @@
+{
+  "name": "xml-objects",
+  "version": "0.0.1",
+  "description": "Streaming wrapper around xml2js",
+  "main": "index.js",
+  "dependencies": {
+    "xml2js": "~0.4.0"
+  },
+  "devDependencies": {
+    "tape": "~2.3.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timhudson/xml-objects.git"
+  },
+  "homepage": "https://github.com/timhudson/xml-objects",
+  "author": {
+    "name": "Tim Hudson",
+    "email": "tim.hudson15@gmail.com"
+  },
+  "license": "MIT"
+}
