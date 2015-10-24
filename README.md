@@ -1,14 +1,14 @@
-xml-objects
-===========
+# xml-objects
 
-> Streaming wrapper around xml2js
+Streaming wrapper around xml2js
 
 Pipe fully formed bits of xml to _xml-objects_ to parse into javascript objects. Works great with [xml-nodes](https://github.com/timhudson/xml-nodes).
 
-[![build status](https://secure.travis-ci.org/timhudson/xml-objects.png)](http://travis-ci.org/timhudson/xml-objects)
+[![Build Status](https://img.shields.io/travis/timhudson/xml-objects.svg?style=flat-square)](https://travis-ci.org/timhudson/xml-objects)
 
-install
--------
+[![NPM](https://nodei.co/npm/xml-objects.png?downloads=true&downloadRank=true)](https://nodei.co/npm/xml-objects/)
+
+## Install
 
 With [npm](https://npmjs.org/) do:
 
@@ -16,8 +16,7 @@ With [npm](https://npmjs.org/) do:
 npm install xml-objects
 ```
 
-example
--------
+## Example
 
 ```javascript
 var request = require('request');
@@ -32,7 +31,6 @@ request('http://news.yahoo.com/rss/entertainment')
   });
 ```
 
-license
--------
+## License
 
 MIT
