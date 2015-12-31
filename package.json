@@ -1,6 +1,6 @@
 {
   "name": "xml-objects",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Streaming wrapper around xml2js",
   "main": "index.js",
   "dependencies": {
