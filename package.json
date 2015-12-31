@@ -4,6 +4,7 @@
   "description": "Streaming wrapper around xml2js",
   "main": "index.js",
   "dependencies": {
+    "through2": "^2.0.0",
     "xml2js": "^0.4.15"
   },
   "devDependencies": {
