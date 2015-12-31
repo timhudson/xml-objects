@@ -4,11 +4,11 @@
   "description": "Streaming wrapper around xml2js",
   "main": "index.js",
   "dependencies": {
-    "xml2js": "~0.4.0"
+    "xml2js": "^0.4.15"
   },
   "devDependencies": {
     "standard": "^5.4.1",
-    "tape": "~2.3.0"
+    "tape": "^4.4.0"
   },
   "scripts": {
     "test": "standard && tape test/*.js"
