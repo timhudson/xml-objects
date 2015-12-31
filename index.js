@@ -1,27 +1,10 @@
-var Transform = require('stream').Transform
-  , util = require('util')
-  , xml2js = require('xml2js')
+var through = require('through2')
+var Parser = require('xml2js').Parser
 
-module.exports = function(options) {
-  return new XmlToObj(options)
-}
+module.exports = function (options) {
+  var parser = new Parser(options)
 
-function XmlToObj(options) {
-  this.options = options
-  Transform.call(this, {
-    objectMode: true
-  })
-}
-
-util.inherits(XmlToObj, Transform)
-
-XmlToObj.prototype._transform = function(chunk, encoding, done) {
-  var parser = new xml2js.Parser(this.options)
-    , self = this
-
-  parser.parseString(String(chunk), function(err, obj) {
-    if (err) console.log(err)
-    self.push(obj)
-    done(err)
+  return through.obj(function (chunk, enc, callback) {
+    parser.parseString(chunk.toString(), callback)
   })
 }
