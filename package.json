@@ -7,10 +7,11 @@
     "xml2js": "~0.4.0"
   },
   "devDependencies": {
+    "standard": "^5.4.1",
     "tape": "~2.3.0"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "standard && tape test/*.js"
   },
   "repository": {
     "type": "git",
